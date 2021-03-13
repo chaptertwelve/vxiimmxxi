@@ -263,8 +263,8 @@ h2.signature{
 		font-size: 56px;
 	}
 
-	.names *{
-	font-weight: 600;
+	.names-container{
+		padding: 10px;
 	}
 
 	.names h2{
