@@ -1,0 +1,93 @@
+/* Fonts */
+@font-face {
+  font-family: Cormorant Garamond;
+  src: url(fonts/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+  font-family: Cormorant Garamond Bold;
+  src: url(fonts/CormorantGaramond-Bold.ttf);
+}
+
+@font-face {
+  font-family: Cormorant Garamond Bold Italic;
+  src: url(fonts/CormorantGaramond-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Cormorant Garamond Italic;
+  src: url(fonts/CormorantGaramond-Italic.ttf);
+}
+
+@font-face {
+  font-family: Cormorant Garamond Light;
+  src: url(fonts/CormorantGaramond-Light.ttf);
+}
+
+@font-face {
+  font-family: Cormorant Garamond Light Italic;
+  src: url(fonts/CormorantGaramond-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: Cormorant Garamond Medium;
+  src: url(fonts/CormorantGaramond-Medium.ttf);
+}
+
+@font-face {
+  font-family: Cormorant Garamond Medium Italic;
+  src: url(fonts/CormorantGaramond-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: Cormorant Garamond Semibold;
+  src: url(fonts/CormorantGaramond-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Cormorant Garamond Semibold Italic;
+  src: url(fonts/CormorantGaramond-SemiBoldItalic.ttf);
+}
+
+/* Main Styles */
+
+body{
+	color: #545454;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, p{
+	font-family: "Cormorant Garamond";
+	color: #545454;
+}
+
+.landing{
+	background: #eae6dd;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.title{
+	margin: 0 auto;
+	align-self: center;
+	text-align: center;
+	letter-spacing: 0.5px;
+}
+
+.title *{
+	margin: 0;
+}
+
+.title h1{
+	font-size: 33px;
+}
+
+.title h2{
+	font-family: "Cormorant Garamond";
+	font-style: italic;
+	font-weight: 500;
+	font-size: 62px;
+}
