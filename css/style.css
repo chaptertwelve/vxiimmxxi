@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, p{
 	font-size: 33px;
 	font-weight: 600;
 	opacity: 0;
-	animation: delayfade forwards 1s;
+	animation: delayfade forwards 2s;
 }
 
 .title h2{
@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, p{
 	font-weight: 500;
 	font-size: 62px;
 	opacity: 0;
-	animation: delayfade forwards 2s;
+	animation: delayfade forwards 3s;
 }
 
 /* getting married */
