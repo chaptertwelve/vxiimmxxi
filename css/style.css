@@ -251,6 +251,10 @@ h2.signature{
 		font-size: 56px;
 	}
 
+	.names *{
+	font-weight: 600;
+	}
+
 	.names h2{
 	font-size: 34px;
 	color: #697452;
