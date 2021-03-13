@@ -1,4 +1,6 @@
 /* Fonts */
+
+/* Serif Fonts */
 @font-face {
   font-family: Cormorant Garamond;
   src: url(fonts/CormorantGaramond-Regular.ttf);
@@ -49,6 +51,12 @@
   src: url(fonts/CormorantGaramond-SemiBoldItalic.ttf);
 }
 
+/* Script fonts */
+@font-face {
+  font-family: Mistrully;
+  src: url(fonts/Mistrully.ttf);
+}
+
 /* Main Styles */
 
 body{
@@ -61,7 +69,7 @@ h1, h2, h3, h4, h5, p{
 	color: #545454;
 }
 
-.landing{
+.container{
 	background: #eae6dd;
 	height: 100%;
 	width: 100%;
@@ -70,12 +78,20 @@ h1, h2, h3, h4, h5, p{
 	justify-content: center;
 }
 
-.title{
+.text{
 	margin: 0 auto;
 	align-self: center;
 	text-align: center;
 	letter-spacing: 0.5px;
 }
+
+/* Misc */
+
+.underline{
+	text-decoration: underline;
+}
+
+/* landing */
 
 .title *{
 	margin: 0;
@@ -83,6 +99,7 @@ h1, h2, h3, h4, h5, p{
 
 .title h1{
 	font-size: 33px;
+	font-weight: 600;
 }
 
 .title h2{
@@ -90,4 +107,162 @@ h1, h2, h3, h4, h5, p{
 	font-style: italic;
 	font-weight: 500;
 	font-size: 62px;
+}
+
+/* getting married */
+
+.getting-married-container{
+	background-image: url('../images/getting-married-faded.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.getting-married h2{
+	font-family: "Mistrully";
+	font-weight: 500;
+	font-size: 73.33px;
+	color: #697452;
+	z-index: 1;
+}
+
+/* names */
+
+.names *{
+	font-weight: 500;
+	margin: 5px auto;
+}
+
+.names h2{
+	font-size: 62px;
+	color: #697452;
+}
+
+.names p{
+	font-size: 40px;
+	font-style: italic;
+}
+
+.names .and{
+	font-size: 44px;
+}
+
+/* ceremony-reception */
+
+.container.ceremony-reception{
+	text-transform: uppercase;
+	justify-content: left;
+	max-width: 100%;
+	overflow: hidden;
+	background-image: url(../images/ceremony-reception.jpg);
+	background-position: 30% 70%;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.ceremony-reception .background-fade{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #eae6dd;
+	opacity: 0.7;
+	z-index: 0;
+	margin: 0;
+}
+
+.ceremony-reception *{
+	margin: 5px auto;
+	flex-basis: 100%;
+	z-index: 1;
+	font-size: 26.666px;
+}
+
+.ceremony-reception > div{
+	text-align: left;
+	padding: 45px;
+}
+
+.ceremony{
+	align-self: flex-start;
+}
+
+.reception{
+	align-self: flex-end;
+}
+
+/* thank you */
+
+.thank-you-container *{
+	margin: 5px auto;
+}
+
+.thank-you{
+	max-width: 65%;
+}
+
+.thank-you h2{
+	color: #697452;
+	font-size: 32px;
+	font-weight: 500;
+	margin: 30px auto;
+}
+
+h2.signature{
+	font-family: "Mistrully";
+	color: #545454;
+}
+
+@media screen and (max-width: 1200px){
+
+	.container.ceremony-reception{
+		background-position: calc(45% + 30px) calc(60% + 30px);
+	}
+	
+}
+
+@media screen and (max-width: 800px){
+
+	.ceremony, .reception{
+		align-self: center;
+	}
+
+}
+
+@media screen and (max-width: 600px){
+
+	.container.ceremony-reception{
+		background-size: cover;
+	}
+
+	.ceremony-reception *{
+		font-size: 20px;
+	}
+
+	.ceremony-reception .background-fade{
+		opacity: 0.8;
+	}
+
+	.thank-you-container{
+		height: auto;
+	}
+
+	.getting-married h2{
+		font-size: 56px;
+	}
+
+	.names h2{
+	font-size: 34px;
+	color: #697452;
+	}
+
+	.names p{
+		font-size: 24px;
+		font-style: italic;
+	}
+
+	.names .and{
+		font-size: 26px;
+	}
+
 }
