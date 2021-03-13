@@ -63,6 +63,13 @@
 	100%{ opacity: 1; }
 }
 
+@keyframes playfulup{
+	0%{ top: 0px; }
+	25%{ top: -10px; }
+	75%{ top: 10px; }
+	100%{ top: 0px; }
+}
+
 /* Main Styles */
 
 body{
@@ -132,7 +139,7 @@ h1, h2, h3, h4, h5, p{
 
 .getting-married-container{
 	background-image: url('../images/getting-married2.jpg');
-	background-position: center;
+	background-position: center bottom;
 	background-size: cover;
 	position: relative;
 }
@@ -153,11 +160,17 @@ h1, h2, h3, h4, h5, p{
 	z-index: 1;
 }
 
+.text.getting-married{
+	align-self: flex-start;
+}
+
 .getting-married h2{
-	font-family: "Mistrully";
+	font-family: "Cormorant Garamond Italic";
 	font-weight: 500;
 	font-size: 73.33px;
 	color: #697452;
+	position: relative;
+	top: 40px;
 }
 
 /* names */
@@ -228,6 +241,80 @@ h1, h2, h3, h4, h5, p{
 	align-self: flex-end;
 }
 
+/* color motif */
+
+.color-motif h2{
+	color: #697452;
+	font-size: 48px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.color-motif h2, .color-motif p{
+	margin: 5px;
+}
+
+.color-motif p{
+	font-family: "Cormorant Garamond Italic";
+	color: #545454;
+	font-size: 26.666;
+}
+
+.color-palette{
+	display: flex;
+	justify-content: space-between;
+	max-width: 80%;
+	flex-wrap: nowrap;
+	margin: 30px;
+}
+
+.color-palette > div{
+	min-height: 120px;
+	min-width: 120px;
+	border-radius: 100%;
+	margin: 0 10px;
+	top: 0;
+	position: relative;
+	transition: 0.6s;
+}
+
+.color-palette > div:hover{
+	top: -20px;
+	transition: 0.6s;
+}
+
+.color1{
+	background: #697452;
+	animation: playfulup linear infinite 4s;
+	animation-delay: 3s;
+}
+
+.color2{
+	background: #959b79;
+	animation: playfulup linear infinite 4s;
+	animation-delay: 2s;
+}
+
+.color3{
+	background: #e8e5dc;
+	border: 1px solid #697452;
+	box-shadow: 3px 3px 0px #697452;
+	animation: playfulup linear infinite 4s;
+	animation-delay: 1s;
+}
+
+.color4{
+	background: #c5bda8;
+	animation: playfulup linear infinite 4s;
+	animation-delay: 4s;
+}
+
+.color5{
+	background: #ffffff;
+	animation: playfulup linear infinite 4s;
+	animation-delay: 5s;
+}
+
 /* thank you */
 
 .thank-you-container *{
@@ -246,7 +333,7 @@ h1, h2, h3, h4, h5, p{
 }
 
 h2.signature{
-	font-family: "Mistrully";
+	font-family: "Cormorant Garamond";
 	color: #545454;
 }
 
@@ -266,6 +353,34 @@ h2.signature{
 
 }
 
+@media screen and (max-width: 690px){
+
+	.color-palette{
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 100%;
+	}
+
+	.color-palette > div{
+		min-height: 120px;
+		min-width: 120px;
+		max-height: 120px;
+		max-width: 120px;
+		width: auto;
+		height: auto;
+		margin: 10px;
+	}
+
+	.color1, .color2, .color3{
+		flex-basis: 33.33%;
+	}
+
+	.color4, .color5{
+		flex-basis: 50%;
+	}
+
+}
+
 @media screen and (max-width: 600px){
 
 	.landing{
@@ -273,7 +388,7 @@ h2.signature{
 	}
 	
 	.title h2{
-		font-size: 92px;
+		font-size: 56px;
 	}
 
 	.container.ceremony-reception{
