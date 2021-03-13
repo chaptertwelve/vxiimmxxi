@@ -285,34 +285,34 @@ h1, h2, h3, h4, h5, p{
 
 .color1{
 	background: #697452;
-	animation: playfulup linear infinite 4s;
-	animation-delay: 3s;
+	/*animation: playfulup linear infinite 4s;
+	animation-delay: 3s;*/
 }
 
 .color2{
 	background: #959b79;
-	animation: playfulup linear infinite 4s;
-	animation-delay: 2s;
+	/*animation: playfulup linear infinite 4s;
+	animation-delay: 2s;*/
 }
 
 .color3{
 	background: #e8e5dc;
 	border: 1px solid #697452;
 	box-shadow: 3px 3px 0px #697452;
-	animation: playfulup linear infinite 4s;
-	animation-delay: 1s;
+	/*animation: playfulup linear infinite 4s;
+	animation-delay: 1s;*/
 }
 
 .color4{
 	background: #c5bda8;
-	animation: playfulup linear infinite 4s;
-	animation-delay: 4s;
+	/*animation: playfulup linear infinite 4s;
+	animation-delay: 4s;*/
 }
 
 .color5{
 	background: #ffffff;
-	animation: playfulup linear infinite 4s;
-	animation-delay: 5s;
+	/*animation: playfulup linear infinite 4s;
+	animation-delay: 5s;*/
 }
 
 /* thank you */
