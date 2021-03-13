@@ -57,6 +57,12 @@
   src: url(fonts/Mistrully.ttf);
 }
 
+/* animations */
+@keyframes delayfade{
+	0%{ opacity: 0; }
+	100%{ opacity: 1; }
+}
+
 /* Main Styles */
 
 body{
@@ -100,13 +106,17 @@ h1, h2, h3, h4, h5, p{
 .title h1{
 	font-size: 33px;
 	font-weight: 600;
+	opacity: 0;
+	animation: delayfade forwards 1s;
 }
 
 .title h2{
-	font-family: "Cormorant Garamond";
+	font-family: "Cormorant Garamond Italic";
 	font-style: italic;
 	font-weight: 500;
 	font-size: 62px;
+	opacity: 0;
+	animation: delayfade forwards 2s;
 }
 
 /* getting married */
@@ -138,11 +148,13 @@ h1, h2, h3, h4, h5, p{
 }
 
 .names p{
+	font-family: "Cormorant Garamond Italic";
 	font-size: 40px;
 	font-style: italic;
 }
 
 .names .and{
+	font-family: "Cormorant Garamond Italic";
 	font-size: 44px;
 }
 
