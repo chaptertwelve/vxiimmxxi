@@ -243,6 +243,14 @@ h2.signature{
 
 @media screen and (max-width: 600px){
 
+	.landing{
+		padding: 20px;
+	}
+	
+	.title h2{
+		font-size: 92px;
+	}
+
 	.container.ceremony-reception{
 		background-size: cover;
 	}
