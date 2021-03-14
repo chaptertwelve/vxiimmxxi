@@ -161,6 +161,11 @@ h1, h2, h3, h4, h5, p{
 	background-position: center bottom;
 	background-size: cover;
 	position: relative;
+	flex-wrap: wrap;
+}
+
+.getting-married-container > div{
+	flex-basis: 100%;
 }
 
 .getting-married-container .background-fade{
@@ -190,6 +195,34 @@ h1, h2, h3, h4, h5, p{
 	color: #697452;
 	position: relative;
 	top: 40px;
+}
+
+.save-date{
+	z-index: 1;
+    justify-content: center;
+    text-align: center;
+    align-self: flex-end;
+    position: relative;
+    bottom: 100px;
+}
+
+.save-date *{
+	margin: 0 auto;
+}
+
+h2.save, h2.date{
+	font-family: "Cormorant Garamond Italic";
+	font-weight: 500;
+}
+
+h2.save{
+	font-size: 35px;
+}
+
+h2.date{
+	font-weight: 500;
+	font-size: 55px;
+	color: #697452;
 }
 
 /* names */
@@ -364,6 +397,13 @@ h2.signature{
 	
 }
 
+@media screen and (max-width: 1024px){
+
+	.save-date{
+		align-self: flex-start;
+	}
+}
+
 @media screen and (max-width: 800px){
 
 	.ceremony, .reception{
@@ -416,6 +456,14 @@ h2.signature{
 	
 	.title h2{
 		font-size: 56px;
+	}
+
+	h2.save{
+		font-size: 25px;
+	}
+
+	h2.date{
+		font-size: 45px;
 	}
 
 	.container.ceremony-reception{
