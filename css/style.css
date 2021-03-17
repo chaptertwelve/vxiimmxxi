@@ -385,8 +385,9 @@ h2.date{
 }
 
 h2.signature{
-	font-family: "Cormorant Garamond";
+	font-family: "Cormorant Garamond Italic";
 	color: #545454;
+	font-size: 36px;
 }
 
 @media screen and (max-width: 1200px){
