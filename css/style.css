@@ -387,7 +387,7 @@ h2.date{
 h2.signature{
 	font-family: "Cormorant Garamond Italic";
 	color: #545454;
-	font-size: 36px;
+	font-size: 33px;
 }
 
 @media screen and (max-width: 1200px){
@@ -406,10 +406,27 @@ h2.signature{
 	}
 }
 
+@media screen and (max-width: 992px){
+
+	.container{
+		padding: 50px 10px;
+	}
+
+}
+
 @media screen and (max-width: 800px){
 
 	.ceremony, .reception{
 		align-self: center;
+	}
+
+	.title h3{
+		font-size: 25px;
+	}
+
+	
+	.title h2{
+		font-size: 56px;
 	}
 
 }
@@ -448,16 +465,8 @@ h2.signature{
 		display: none;
 	}
 
-	.title h3{
-		font-size: 25px;
-	}
-
 	.landing{
 		padding: 20px;
-	}
-	
-	.title h2{
-		font-size: 56px;
 	}
 
 	h2.save{
