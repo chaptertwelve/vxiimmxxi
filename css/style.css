@@ -383,6 +383,23 @@ h2.date{
 	font-weight: 500;
 	margin: 30px auto;
 }
+.thank-you-container .background-fade{
+        position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: 0.7;
+	z-index: 0;
+	margin: 0;
+}
+.thank-you-container{
+	background-image: url('../images/thank-you-image.jpg');  /* dito ung image mo */
+	background-position: center bottom; /* positioning ng background */
+	background-size: cover; /* kung icover niya ba ung buong div*/
+	position: relative; /* relative dapat para hindi umalis ung absolutely positioned na div ng background-fade */
+}
 
 h2.signature{
 	font-family: "Cormorant Garamond Italic";
