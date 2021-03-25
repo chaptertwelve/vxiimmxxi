@@ -370,7 +370,7 @@ h2.date{
 /* thank you */
 
 .thank-you-container{
-	background: url(../images/thank-you-image.jpg);
+	background: url(../images/thank-you-image.jpg) center center;
 	background-size: cover;
 	position: relative;
 }
