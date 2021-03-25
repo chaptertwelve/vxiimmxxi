@@ -369,12 +369,100 @@ h2.date{
 
 /* thank you */
 
+.thank-you-container{
+	background: url(../images/thank-you-image.jpg);
+	background-size: cover;
+	position: relative;
+}
+
+.thank-you-container .background-fade{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	opacity: 0.7;
+	z-index: 0;
+	margin: 0;
+}
+
 .thank-you-container *{
 	margin: 20px auto;
 }
 
+.thank-you-button-link{
+	border-radius: 80px;
+	max-width: 150px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.thank-you-button{
+	flex-basis: 100%;
+	border-radius: inherit;
+	background: #697452;
+	height: auto;
+	min-height: 20px;
+	max-height: 20px;
+	min-width: 40px;
+	max-width: 100px;
+	padding: 12px 24px;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.3s;
+	position: relative;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	font-weight: bold;
+	overflow: visible;
+	border: 2px solid transparent;
+	font-family: sans-serif;
+}
+
+.thank-you-button:before{
+	content: "RSVP Here";
+	position: absolute;
+	top: 13px;
+	left: 0px;
+	width: 100%;
+	transition: 0.3s;
+	opacity: 1;
+}
+
+.thank-you-button:after{
+	content: "RSVP Here";
+	position: absolute;
+	top: 60px;
+	left: 0px;
+	width: 100%;
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.thank-you-button:hover{
+	background: transparent;
+	border: 2px solid #697452;
+	color: #697452;
+	transition: 0.3s;
+	box-shadow: none;
+}
+
+.thank-you-button:hover:before{
+	top: -60px;
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.thank-you-button:hover:after{
+	top: 13px;
+	transition: 0.3s;
+	opacity: 1;
+}
+
 .thank-you{
 	max-width: 65%;
+	z-index: 1;
 }
 
 .thank-you h2{
